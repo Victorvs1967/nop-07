@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=Home, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="static/css/style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap&subset=cyrillic" rel="stylesheet">
+</head>
+<body>
+    <div class="container-contact100">
+        <div class="wrap-contact100">
+            <form class="contact100-form validate-form" action="{{url_for('success')}}" method="POST">
+                <span class="contact100-form-title">
+                    Data Collector
+                </span>
+
+                <div class="wrap-input100 validate-input" data-validate="Name is requied">
+                    <input type="text" class="input100" name="height" placeholder="Height (kg)">
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="Name is requied">
+                    <input type="text" class="input100" name="weight" placeholder="Weight (kg)">
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="Name is requied">
+                    <input type="text" class="input100" name="shoesize" placeholder="Shoe Size">
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="Name is requied">
+                    <input type="text" class="input100" name="sex" placeholder="Sex (M/F)">
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="container-contact100-form-btn">
+                    <div class="wrap-contact100-form-btn">
+                        <div class="contact100-form-bgbtn"></div>
+                            <button class="contact100-form-btn" type="submit">
+                                <span>
+                                    Submit
+                                </span>
+                            </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
